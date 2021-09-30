@@ -1,4 +1,36 @@
 baseURL = 'https://www.stephenwuebker.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'ananke' 
+title = 'Stephen Wuebker'
+theme = 'binario' 
+
+[Permalinks]
+  posts = "/:year/:month/:day/:filename"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'dracula'
+    tabWidth = 4
+
+[Author] # Used in authorbox
+  name = "Stephen Wuebker"
+  bio = "I am a data professional and technologist living and working in Ohio. I am focused on working with the Microsoft stack, including SQL Server, PowerShell, Azure, etc. I also love to travel, cooking, craft beers and cocktails, and hanging out with our furkids."
+
+[Params]
+  opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
+  twitter_cards = true # Enable Twitter Cards if true
+  authorbox = true # Show authorbox at bottom of single pages if true
+  comments = true # Enable comments for all site pages
+  related = true # Enable Related content for single pages
+  mathjax = true # Enable MathJax for all site pages
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path. Optional
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
