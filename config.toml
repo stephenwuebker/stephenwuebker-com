@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Stephen Wuebker'
 theme = 'mainroad' 
 
+disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
+
 [Permalinks]
   posts = "/:year/:month/:day/:filename"
 
@@ -13,7 +15,7 @@ theme = 'mainroad'
     guessSyntax = false
     hl_Lines = ''
     lineAnchors = ''
-    lineNoStart = 1
+    lineNoStart = 13
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
@@ -26,6 +28,8 @@ theme = 'mainroad'
   avatar = "/images/avatar.jpg"
 
 [Params]
+  description = "Stephen Wuebker's personal blog about life, the universe, everything" # Site description. Used in meta description
+  copyright = "Stephen Wuebker" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
@@ -35,6 +39,25 @@ theme = 'mainroad'
   mathjax = true # Enable MathJax for all site pages
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path. Optional
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
+  googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+
+  [Params.logo]
+  title = "stephenwuebker.com" # Logo title, otherwise will use site title
+  subtitle = "Timely technology tidbits" # Logo subtitle
 
   [Params.thumbnail]
   visibility = "list" # Control thumbnail visibility
+
+  [Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "taglist", "social", "languages"]
+
+  [Params.widgets.social]
+  # Enable parts of social widget
+  twitter = "stephenwuebker"
+  linkedin = "stephen-wuebker"
+  github = "stephenwuebker"
+  email = "stephen@stephenwuebker.com"
