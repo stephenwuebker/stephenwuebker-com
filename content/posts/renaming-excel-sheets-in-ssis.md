@@ -1,6 +1,9 @@
 ---
 title: "Renaming Excel Sheets In SSIS"
 date: "2020-01-23"
+
+thumbnail: /images/ScriptTask.png
+
 categories: 
   - "technology"
 tags: 

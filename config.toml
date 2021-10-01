@@ -1,7 +1,7 @@
 baseURL = 'https://www.stephenwuebker.com/'
 languageCode = 'en-us'
 title = 'Stephen Wuebker'
-theme = 'binario' 
+theme = 'mainroad' 
 
 [Permalinks]
   posts = "/:year/:month/:day/:filename"
@@ -23,6 +23,7 @@ theme = 'binario'
 [Author] # Used in authorbox
   name = "Stephen Wuebker"
   bio = "I am a data professional and technologist living and working in Ohio. I am focused on working with the Microsoft stack, including SQL Server, PowerShell, Azure, etc. I also love to travel, cooking, craft beers and cocktails, and hanging out with our furkids."
+  avatar = "/images/avatar.jpg"
 
 [Params]
   opengraph = true # Enable OpenGraph if true
