@@ -44,3 +44,5 @@ elseif ($curSize=$downSize)
 
 Update-AzVM -VM $vm -ResourceGroupName $resourceGroup
 ```
+
+{{ template "_internal/disqus.html" . }}

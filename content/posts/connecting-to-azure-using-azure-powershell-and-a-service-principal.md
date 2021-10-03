@@ -57,3 +57,5 @@ Connect-AzAccount -Credential $psCredential -ServicePrincipal -Tenant $tenantID 
 ```
 
 Now you are connected to Azure and can do all sorts of fun things with your resources, like automate changing the size of a VM, which I'll discuss in a future post...
+
+{{ template "_internal/disqus.html" . }}

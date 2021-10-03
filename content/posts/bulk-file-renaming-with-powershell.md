@@ -18,3 +18,5 @@ dir \*June\* | rename-item -NewName {$\_.name -replace "June","May"}
 ```
 
 Easy, right?
+
+{{ template "_internal/disqus.html" . }}

@@ -9,3 +9,5 @@ tags:
   - "add tags"
 ---
 
+
+{{ template "_internal/disqus.html" . }}
