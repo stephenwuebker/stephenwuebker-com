@@ -87,5 +87,3 @@ Save the file and close the Visual Studio instance. Click OK to save the script 
 ![](/images/ExcelSheetAfterRename.png)
 
 Now I can set my Excel Source to always import data from "Sheet1", and don't have to worry about changing the package every single time I get this data to import. One more thing to remember, however, is to set DelayValidation = True on any tasks that use the Excel file, or the package will fail.
-
-{{ template "_internal/disqus.html" . }}
