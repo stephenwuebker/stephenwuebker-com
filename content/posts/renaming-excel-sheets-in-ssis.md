@@ -9,6 +9,8 @@ categories:
 tags: 
   - "excel"
   - "ssis"
+
+socialshare: true
 ---
 
 One problem I face on a regular basis is when a client provides data in Excel, but the sheet is named something different every time. This creates an obvious bottleneck in ETL processes and makes any kind of automation a nightmare. What's the solution? Tell the client to stop being so stupid!

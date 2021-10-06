@@ -7,6 +7,8 @@ tags:
   - "azure"
   - "powershell"
   - "sysadmin"
+
+socialshare: true
 ---
 
 A few weeks ago, I wrote about how to connect to Azure via PowerShell and a service principal. It's super useful, and allows us to do things like change the size of a VM.

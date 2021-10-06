@@ -7,6 +7,8 @@ tags:
   - "azure"
   - "powershell"
   - "sysadmin"
+
+socialshare: true
 ---
 
 Azure PowerShell provides a cross-platform way to manage your Azure resources without actually having to log in to the portal. Obvious benefits here include being able to script away management tasks and speed up administration tasks by using the command line. Microsoft provides some great documentation and installation instructions here:

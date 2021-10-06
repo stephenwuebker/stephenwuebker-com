@@ -5,6 +5,8 @@ categories:
   - "technology"
 tags: 
   - "powershell"
+
+socialshare: true
 ---
 
 Here's a quick one-liner that I find super-useful. If your processes are anything like mine, you've got scripts and/or SSIS packages that are supposed to run at a certain time of the month or maybe a certain day of the week. Right?

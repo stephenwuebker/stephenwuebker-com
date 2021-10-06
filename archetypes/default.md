@@ -7,7 +7,8 @@ thumbnail: add thumbnail image
 
 tags: 
   - "add tags"
+
+socialshare: true
 ---
 
 
-{{ template "_internal/disqus.html" . }}
