@@ -13,14 +13,14 @@ disqusShortname = '' # Enable Disqus comments by entering your Disqus shortname
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
-    guessSyntax = false
+    guessSyntax = true
     hl_Lines = ''
     lineAnchors = ''
     lineNoStart = 13
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = 'dracula'
+    style = 'solarized-dark'
     tabWidth = 4
 
 [Author] # Used in authorbox
