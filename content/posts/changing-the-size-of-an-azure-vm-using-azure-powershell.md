@@ -30,8 +30,8 @@ Ok, now you are connected and we can go ahead with the update. Call Get-AzVM to 
 ```powershell
 $resourceGroup = "<Your Resource Group>"
 $vmName = "<VM Name>"
-$upSize = "Standard\_DS4\_v2"
-$downSize = "Standard\_DS3\_v2"
+$upSize = "Standard_DS4_v2"
+$downSize = "Standard_DS3_v2"
 $vm = Get-AzVM -ResourceGroupName $resourceGroup -VMName $vmName
 $curSize = $vm.HardwareProfile.VmSize
 

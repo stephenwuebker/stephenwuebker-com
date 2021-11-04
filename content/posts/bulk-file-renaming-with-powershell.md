@@ -16,7 +16,7 @@ Perhaps your jobs run and output files. Nothing out of the ordinary. Usually the
 For example, we have a job that creates a set of files monthly. The SSIS package names them according to the month in which they were run. This is normally not a problem. However, this month, the data I needed to create those files was late and I couldn't run my job until after the first of the next month. I could modify the SSIS package, but for a one-off problem, it's not worth it. (To say nothing about change tracking, etc.) It's far simpler to let the files get created and rename them.
 
 ```powershell
-dir \*June\* | rename-item -NewName {$\_.name -replace "June","May"}
+dir *June* | rename-item -NewName {$_.name -replace "June","May"}
 ```
 
 Easy, right?

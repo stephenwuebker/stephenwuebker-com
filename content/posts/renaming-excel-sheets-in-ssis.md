@@ -55,7 +55,7 @@ Workbook xlBook;
 try
 {
   // Using the Excel file path variable
-  xlBook = app.Workbooks.Open(Dts.Variables\["User::ExcelPath"\].Value.ToString());
+  xlBook = app.Workbooks.Open(Dts.Variables["User::ExcelPath"].Value.ToString());
   int numSheet = 1;
 
   // Get a list of all the sheets in the file
