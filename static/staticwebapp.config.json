@@ -1,0 +1,9 @@
+{
+    "routes": [
+        {
+            "route": "/.well-known/webfinger",
+            "redirect": "https://mastodon.stephenwuebker.com/.well-known/webfinger",
+            "statusCode": 301
+        }
+    ]
+}
