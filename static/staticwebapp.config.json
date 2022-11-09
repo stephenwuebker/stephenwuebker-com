@@ -1,9 +1,0 @@
-{
-    "routes": [
-        {
-            "route": "/.well-known/webfinger",
-            "redirect": "https://mastodon.stephenwuebker.com/.well-known/webfinger?resource=acct:stephenwuebker@stephenwuebker.com",
-            "statusCode": 301
-        }
-    ]
-}
