@@ -57,6 +57,14 @@ disqusShortname = '' # Enable Disqus comments by entering your Disqus shortname
   # Enable widgets in given order
   widgets = ["search", "recent", "taglist", "social", "languages"]
 
+
+  [[Params.widgets.social.custom]]
+  # Custom social links
+  title = "Mastodon"
+  url = "https://mastodon.social/@stephenwuebker"
+  icon = "svg/mastodon.svg" # Optional. Path relative to "layouts/partials"
+  rel = "me"
+
   [Params.widgets.social]
   # Enable parts of social widget
   twitter = "stephenwuebker"
