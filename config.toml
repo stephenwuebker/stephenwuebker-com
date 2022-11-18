@@ -61,7 +61,7 @@ disqusShortname = '' # Enable Disqus comments by entering your Disqus shortname
   [[Params.widgets.social.custom]]
   # Custom social links
   title = "Mastodon"
-  url = "https://mastodon.social/@stephenwuebker"
+  url = "https://stephenwuebker.social/@stephen"
   icon = "svg/mastodon.svg" # Optional. Path relative to "layouts/partials"
   rel = "me"
 
