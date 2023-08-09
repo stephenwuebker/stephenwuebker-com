@@ -5,6 +5,7 @@ theme = 'mainroad'
 
 disqusShortname = '' # Enable Disqus comments by entering your Disqus shortname
 
+enableRobotsTXT = true
 
 [Permalinks]
   posts = "/:year/:month/:day/:filename"
