@@ -46,7 +46,7 @@ enableRobotsTXT = true
 
   [Params.logo]
   title = "stephenwuebker.com" # Logo title, otherwise will use site title
-  subtitle = "Timely technology tidbits" # Logo subtitle
+  subtitle = "" # "Timely technology tidbits" # Logo subtitle
 
   [Params.thumbnail]
   visibility = "list" # Control thumbnail visibility
