@@ -1,7 +1,7 @@
 ---
 title: "Amazon Stock Checker Script"
 date: 2022-12-30T11:31:06-05:00
-draft: true
+draft: false
 
 thumbnail: images/python-logo.png
 
@@ -11,11 +11,11 @@ tags:
 socialshare: true
 ---
 
-Recently I was shopping for some upgrades for my home office on Amazon and a few of the things I really wanted were out of stock at the time. I thought it was really annoying to have to remember to go and check on the things on a periodic basis to see if they were back in stock, and I didn't see anything on Amazon's site that would send me an email or anything if and when the stock was replenished. (Hint to Amazon: this would be a great idea!)
+Recently, I was shopping for some upgrades for my home office on Amazon and a few of the things I really wanted were out of stock at the time. I thought it was really annoying to have to remember to go and check on the things on a periodic basis to see if they were back in stock, and I didn't see anything on Amazon's site that would send me an email or anything if and when the stock was replenished. **(Hint to Amazon: this would be a great idea!)**
 
 So, let's fire up the old webscraper and code ourselves a solution to this problem. The basic idea here is to read a list of product URLs and use BeautifulSoup or something similar to scrape the page looking for text that is something like "Currently Unavailable". If it's found, it's not yet back in stock, so do nothing. Otherwise, send an email with the link to me so I can buy it.
 
-Well, chat.openai.com and their ChatGPT bot have been getting a lot of press lately and there has been a lot of talk about how it can just write programs for you. \<scarequotes\> **IT'S GOING TO PUT US ALL OUT OF A JOB!!** \</scarequotes\> Yeah. Well, we'll see about that. I thought this might be a good way to test the bot's dev chops, so I gave it the following prompt:
+Well, OpenAI and specifically the ChatGPT bot have been getting a lot of press about how it can just write programs for you. \<scarequotes\> **IT'S GOING TO PUT US ALL OUT OF A JOB!!** \</scarequotes\> Yeah. Well, we'll see about that. I thought this might be a good way to test the bot's dev chops, so I gave it the following prompt:
 
 `"Python script to check a list of products on amazon and see if they are back in stock"`
 
@@ -43,7 +43,7 @@ else:
 
 The Open AI bot kind of had the right idea, but ultimately, it didn't work at all. I don't think AI is quite there yet. I can envision it being a good tool to output some basic framework code or give examples or prompts, and then an actual person can complete or write the actual code. I can see it helping immensely with code output and speed. Relying on AI *right now* for anything approaching accurate and secure code is folly.
 
-All that said, scrapehero.com actually had a good example. 
+All that said, scrapehero.com actually had a good example.
 
 https://www.scrapehero.com/tutorial-how-to-scrape-amazon-product-details-using-python-and-selectorlib/
 
@@ -95,4 +95,7 @@ with open("urls.txt",'r') as urllist, open('output.jsonl','w') as outfile:
         outfile.write("\n")
 ```
 
-From here, we can read that json file into a database to track the status of each item, and know if it came back in stock, and if we've already sent an email about the product.
+From here, we could read that json file into a database to track the status of each item, and know if it came back in stock, and if we've already sent an email about the product.
+
+I just checked the file manually for a couple of days, and things were back in stock before I ever got around to building out any kind of tracking and notification system. I guess I'll get around to that one of these days...
+
