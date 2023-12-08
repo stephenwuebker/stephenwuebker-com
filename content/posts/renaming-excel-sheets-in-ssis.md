@@ -13,17 +13,15 @@ tags:
 socialshare: true
 ---
 
-One problem I face on a regular basis is when I receive Excel files containing data for me to import, but the sheet is named something different every time. This creates an obvious bottleneck in ETL processes and makes any kind of automation a nightmare. What's the solution? I know, I know, don't use Excel. Right. Tell that to your clients.
+Do you ever get Excel files where the sheet name changes on you every single time? It's like a never-ending puzzle in my ETL workflows, and trying to automate it? Nightmare. I know, I know, you'll probably say ditch Excel, but good luck telling that to the clients.
 
-There has to be a way to deal with this in SSIS somehow, right?
+But guess what? SSIS has a slick trick up its sleeve to deal with this mess – scripting to the rescue!
 
-There is! SSIS provides the ability to handle this problem quite easily via scripting.
-
-As you can see, I have an Excel file with the sheets named with a date. So the next time I receive this file, the sheet will have a different name.
+As you can see, I have an Excel file with the sheets named with a date. The next time I receive this file, the sheet will have a different name.
 
 ![](/images/ExcelSheetBeforeRename.png)
 
-Before I import this data, I need to rename that sheet, because the Excel Source in SSIS only lets me specify sheets by name, and that name is different each time this file comes in. If I don't rename the sheet, I would need to update sheet name in my Excel Source. Every. Single. Time.
+This sucks because the Excel Source in SSIS only lets me specify sheets by name, and that name is different each time this file comes in. If I don't rename the sheet, I would need to update my Excel Source. Every. Single. Time.
 
 To solve this, in my SSIS package, I'll add a script task.
 
