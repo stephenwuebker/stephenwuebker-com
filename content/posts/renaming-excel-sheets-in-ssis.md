@@ -13,11 +13,9 @@ tags:
 socialshare: true
 ---
 
-One problem I face on a regular basis is when a client provides data in Excel, but the sheet is named something different every time. This creates an obvious bottleneck in ETL processes and makes any kind of automation a nightmare. What's the solution? Tell the client to stop being so stupid!
+One problem I face on a regular basis is when I receive Excel files containing data for me to import, but the sheet is named something different every time. This creates an obvious bottleneck in ETL processes and makes any kind of automation a nightmare. What's the solution? I know, I know, don't use Excel. Right. Tell that to your clients.
 
-Wait.
-
-No. Don't do that. There has to be a way to deal with this in SSIS somehow, right?
+There has to be a way to deal with this in SSIS somehow, right?
 
 There is! SSIS provides the ability to handle this problem quite easily via scripting.
 
@@ -31,7 +29,7 @@ To solve this, in my SSIS package, I'll add a script task.
 
 ![](/images/ScriptTask.png)
 
-Double-click on the script task, and make sure the script language is set to C#. You could use Visual Basic here as well if you are more comfortable with it, but I'm using C#. Also, I have the path for the Excel file as a variable in my package. So, I want add it to the list of read-only variables the script has access to. We aren't changing the path here, so it doesn't need to be read-write.
+Double-click on the script task, and make sure the script language is set correctly. You could use Visual Basic here if you are more comfortable with it, but I'm using C#. Also, I have the path for the Excel file as a variable in my package. So, I want add it to the list of read-only variables the script has access to. We aren't changing the path here, so it doesn't need to be read-write.
 
 ![](/images/ScriptTask_Config-1.png)
 
@@ -84,8 +82,10 @@ finally
 Dts.TaskResult = (int)ScriptResults.Success;
 ```
 
-Save the file and close the Visual Studio instance. Click OK to save the script task. Now, if I execute that task, you can see the sheet name has been updated.
+Save the file and close the VSTA window. Click OK to save the script task. Now, if I execute that task, you can see the sheet name has been updated.
 
 ![](/images/ExcelSheetAfterRename.png)
 
-Now I can set my Excel Source to always import data from "Sheet1", and don't have to worry about changing the package every single time I get this data to import. One more thing to remember, however, is to set DelayValidation = True on any tasks that use the Excel file, or the package will fail.
+Now I can set my Excel Data Source to always import data from "Sheet1", and don't have to worry about changing the package every single time I get this data to import.
+
+One more thing to do is to go into the properties for any task that uses the Excel file and set DelayValidation = True. If you don't, the package will fail because the task is expecting sheets that don't actually exist.
