@@ -1,6 +1,6 @@
-[submodule "themes/mainroad"]
-	path = themes/mainroad
-	url = https://github.com/stephenwuebker/Mainroad.git
 [submodule ".devcontainer"]
 	path = .devcontainer
-	url = https://github.com/stephenwuebker/devcontainer-hugo.git
+	url = https://code.stephenwuebker.com/stephenwuebker/devcontainer-hugo
+[submodule "themes/mainroad"]
+	path = themes/mainroad
+	url = https://code.stephenwuebker.com/stephenwuebker/Mainroad
