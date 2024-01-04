@@ -48,6 +48,11 @@ enableRobotsTXT = true
   title = "stephenwuebker.com" # Logo title, otherwise will use site title
   subtitle = "" # "Timely technology tidbits" # Logo subtitle
 
+  [Params.author]
+  name = "Stephen Wuebker"
+  email = "stephen@stephenwuebker.com"
+  location = "Cincinnati"
+
   [Params.thumbnail]
   visibility = "list" # Control thumbnail visibility
 
