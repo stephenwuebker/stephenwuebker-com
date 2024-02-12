@@ -2,7 +2,7 @@
 title: "Renaming Excel Sheets In SSIS"
 date: "2020-01-23"
 
-thumbnail: /images/ScriptTask.png
+thumbnail: https://files.stephenwuebker.com/2020/01/23/ScriptTask.png
 
 categories: 
   - "technology"
@@ -19,21 +19,21 @@ But guess what? SSIS has a slick trick up its sleeve to deal with this mess – 
 
 As you can see, I have an Excel file with the sheets named with a date. The next time I receive this file, the sheet will have a different name.
 
-![](/images/ExcelSheetBeforeRename.png)
+![](https://files.stephenwuebker.com/2020/01/23/ExcelSheetBeforeRename.png)
 
 This sucks because the Excel Source in SSIS only lets me specify sheets by name, and that name is different each time this file comes in. If I don't rename the sheet, I would need to update my Excel Source. Every. Single. Time.
 
 To solve this, in my SSIS package, I'll add a script task.
 
-![](/images/ScriptTask.png)
+![](https://files.stephenwuebker.com/2020/01/23/ScriptTask.png)
 
 Double-click on the script task, and make sure the script language is set correctly. You could use Visual Basic here if you are more comfortable with it, but I'm using C#. Also, I have the path for the Excel file as a variable in my package. So, I want add it to the list of read-only variables the script has access to. We aren't changing the path here, so it doesn't need to be read-write.
 
-![](/images/ScriptTask_Config-1.png)
+![](https://files.stephenwuebker.com/2020/01/23/ScriptTask_Config-1.png)
 
 Then, click "Edit Script..." to launch into the code. The first thing we need to do is add a reference to the Excel Interop libraries. So, in Solution Explorer, right-click on References and click Add Reference. In the Reference Manager window, you can search for "Microsoft.Office.Interop.Excel". Choose the correct version for your environment, and click OK.
 
-![](/images/ReferenceManager.png)
+![](https://files.stephenwuebker.com/2020/01/23/ReferenceManager.png)
 
 At the top of the script code, expand the Namespaces region and add the following:
 
@@ -82,7 +82,7 @@ Dts.TaskResult = (int)ScriptResults.Success;
 
 Save the file and close the VSTA window. Click OK to save the script task. Now, if I execute that task, you can see the sheet name has been updated.
 
-![](/images/ExcelSheetAfterRename.png)
+![](https://files.stephenwuebker.com/2020/01/23/ExcelSheetAfterRename.png)
 
 Now I can set my Excel Data Source to always import data from "Sheet1", and don't have to worry about changing the package every single time I get this data to import.
 

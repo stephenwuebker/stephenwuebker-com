@@ -3,7 +3,7 @@ title: "Embracing Change: Lessons from Abandoned Projects"
 date: 2024-01-09
 draft: false
 
-thumbnail: images/t-sql-tuesday-logo.jpg
+thumbnail: https://files.stephenwuebker.com/logos/t-sql-tuesday-logo.jpg
 
 tags: 
   - "T-SQL Tuesday"
@@ -11,7 +11,7 @@ tags:
 socialshare: true
 ---
 
-[![t-sql tuesday logo](/images/t-sql-tuesday-logo.jpg)](https://sqlreitse.com/2024/01/02/t-sql-tuesday-170-invite-learning-from-abandoned-projects/)
+[![t-sql tuesday logo](https://files.stephenwuebker.com/logos/t-sql-tuesday-logo.jpg)](https://sqlreitse.com/2024/01/02/t-sql-tuesday-170-invite-learning-from-abandoned-projects/)
 
 Thanks to [Reitse](https://sqlreitse.com/) for the [invitation](https://sqlreitse.com/2024/01/02/t-sql-tuesday-170-invite-learning-from-abandoned-projects/)!
 
