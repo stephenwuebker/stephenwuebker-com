@@ -3,7 +3,7 @@ title: "Zipping Files in SSIS"
 date: 2021-10-20T12:51:10-04:00
 draft: false
 
-thumbnail: images/zip_file.jpg
+thumbnail: https://files.stephenwuebker.com/2021/10/20/zip_file.jpg
 
 tags: 
   - "ssis"
@@ -19,11 +19,11 @@ I'm very happy to report that I've found a way to zip files using the Script Tas
 
 Add a Script task to your package and double-click to open the task editor. In my example, I have a variable that I'm using for the path of the exported file. Make sure to add that variable to the list of read-only variables. 
 
-![](/images/ZipFiles_ScriptTaskConfig.png)
+![](https://files.stephenwuebker.com/2021/10/20/ZipFiles_ScriptTaskConfig.png)
 
 Then click "Edit Script..." to launch into the code. The first thing we need to do is add a reference to ``System.IO.Compression`` and ``System.IO.Compression.FileSystem``. So, in Solution Explorer, right-click on References and click Add Reference. In the Reference Manager window, you can search for “System.IO.Compression”. Select those references and click OK.
 
-![](/images/ZipFiles_ReferenceManager.png)
+![](https://files.stephenwuebker.com/2021/10/20/ZipFiles_ReferenceManager.png)
 
 At the top of the code file, expand the ``Namespaces`` region and add the following:
 ```C#

@@ -3,7 +3,7 @@ title: "Amazon Stock Checker Script"
 date: 2022-12-30T11:31:06-05:00
 draft: false
 
-thumbnail: images/python-logo.png
+thumbnail: https://files.stephenwuebker.com/2022/12/30/python-logo.png
 
 tags: 
   - "python"
@@ -98,4 +98,3 @@ with open("urls.txt",'r') as urllist, open('output.jsonl','w') as outfile:
 From here, we could read that json file into a database to track the status of each item, and know if it came back in stock, and if we've already sent an email about the product.
 
 I just checked the file manually for a couple of days, and things were back in stock before I ever got around to building out any kind of tracking and notification system. I guess I'll get around to that one of these days...
-

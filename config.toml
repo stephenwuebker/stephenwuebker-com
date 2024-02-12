@@ -27,7 +27,7 @@ enableRobotsTXT = true
 [Author] # Used in authorbox
   name = "Stephen Wuebker"
   bio = "I am a data professional and technologist living and working in Ohio. I am focused on working with the Microsoft stack, including SQL Server, PowerShell, Azure, etc. I also love to travel, cooking, craft beers and cocktails, and hanging out with our furkids."
-  avatar = "/images/avatar.jpg"
+  avatar = "https://files.stephenwuebker.com/about/avatar.jpg"
 
 [Params]
   description = "Stephen Wuebker's personal blog about life, the universe, everything" # Site description. Used in meta description
