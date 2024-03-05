@@ -7,11 +7,7 @@
 # All available Hugo versions are listed here:
 # https://gitlab.com/pages/hugo/container_registry
 
-image: "${CI_TEMPLATE_REGISTRY_HOST}/pages/hugo:latest"
-
-cache:
-    paths:
-      - public/
+image: "${CI_TEMPLATE_REGISTRY_HOST}/pages/hugo/hugo_extended:latest"
 
 pages:
     variables:
@@ -20,6 +16,7 @@ pages:
       CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
     stage: deploy
     script:
+      - apk add --no-cache go curl bash npm
       - npm install
       - hugo
       - npm install -g wrangler --unsafe-perm=true
