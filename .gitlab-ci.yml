@@ -19,7 +19,7 @@ pages:
       - apk add --no-cache go curl bash npm
       - hugo
       - npm install -g wrangler --unsafe-perm=true
-      - wranger pages publish ./public --project-name=stephenwuebker-com --branch=main
+      - wrangler pages deploy ./public --project-name=stephenwuebker-com --branch=main
     artifacts:
       paths:
         - public
