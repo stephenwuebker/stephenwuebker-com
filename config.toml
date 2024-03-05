@@ -84,7 +84,3 @@ enableRobotsTXT = true
   twitter = true
   whatsapp = false
   email = true
-
-  [Params.azureAppInsights] # Enable Azure Application Insights by entering your connection string
-    enable = true
-    connectionString = 'InstrumentationKey=635dc52c-dd10-455b-896b-02c8d8863611;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/' 
