@@ -17,7 +17,6 @@ pages:
     stage: deploy
     script:
       - apk add --no-cache go curl bash npm
-      - npm install
       - hugo
       - npm install -g wrangler --unsafe-perm=true
       - wranger pages publish ./public --project-name=stephenwuebker-com --branch=main
